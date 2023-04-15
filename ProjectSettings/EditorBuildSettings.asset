@@ -16,10 +16,7 @@ EditorBuildSettings:
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
     path: Assets/Scenes/Level2.unity
-    guid: 1096d6a98aefa7d448fae85c672d49d9
-  - enabled: 1
-    path: Assets/Scenes/Store.unity
-    guid: 5380753f36f69a648a56d7c4cb570c23
+    guid: de707782bf71365479328c9bb11a5e6e
   - enabled: 1
     path: Assets/Scenes/MiniGame.unity
     guid: 659d6d270dedf084a8d13cf9207f0058
