@@ -33,8 +33,12 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
             transform.localScale = new Vector3(1, 1, 1); // Flip the sprite to face left
-            
-            animator.SetBool("IsRunning", true);
+
+            // set running animation, but not if jumping
+            if (!animator.GetBool("isJumping"))
+            {
+                animator.SetBool("IsRunning", true);
+            }
         }
 
         // move right
@@ -42,8 +46,12 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
             transform.localScale = new Vector3(-1, 1, 1); // Flip the sprite to face right
-            
-            animator.SetBool("IsRunning", true);
+
+            // set running animation, but not if jumping
+            if (!animator.GetBool("isJumping"))
+            {
+                animator.SetBool("IsRunning", true);
+            }
         }
 
         // stop moving
@@ -57,13 +65,22 @@ public class PlayerController : MonoBehaviour
         // jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("isJumping", true);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
         }
 
         // attack
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Bark();
+            animator.SetBool("IsRunning", false); // stop the running animation
+            animator.SetBool("isAttacking", true); // play the attack animation
+        }
+        else
+        {
+            animator.SetBool("isAttacking", false);
         }
     }
 
@@ -105,6 +122,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            animator.SetBool("isJumping", false);
         }
     }
 
@@ -112,7 +130,9 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false;
+            isGrounded = false; 
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("isJumping", true);
         }
     }
 }
