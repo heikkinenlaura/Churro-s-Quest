@@ -654,6 +654,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6327716786275268947, guid: cb91dc20c9e07234e806f29826239e99, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6740848245408303766, guid: cb91dc20c9e07234e806f29826239e99, type: 3}
       propertyPath: canvas
       value: 
@@ -783,7 +787,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &242237546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5571,6 +5575,10 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1791222628}
+    - target: {fileID: 5498508710737104803, guid: 0b8c373b80475674ba33eda7449fffb9, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5843383856722853057, guid: 0b8c373b80475674ba33eda7449fffb9, type: 3}
       propertyPath: m_RootOrder
       value: 1
