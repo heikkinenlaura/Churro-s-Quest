@@ -17,10 +17,11 @@ public class DialogSystemLevel2: MonoBehaviour
     private int currentLine = 0;     // An integer representing the current dialogue line being displayed
     private bool dialogueActive = false;  // A boolean representing whether or not the dialogue is currently active
 
+    public GameObject trashUI;
     void Start()
     {
         StartDialogue();            // Call the StartDialogue method
-
+        trashUI.SetActive(false);
         Time.timeScale = 0;         // Pause the game
     }
 
@@ -68,6 +69,8 @@ public class DialogSystemLevel2: MonoBehaviour
         dialogueActive = false;     // Set dialogueActive to false
         HideDialogue();             // Call the HideDialogue method
         Time.timeScale = 1f;        // Unpause the game
+
+        trashUI.SetActive(true);
         this.gameObject.SetActive(false);   // Deactivate this game object
     }
 

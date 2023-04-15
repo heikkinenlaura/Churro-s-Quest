@@ -370,7 +370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7901821
+      value: -2.623
       objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_LocalPosition.y
@@ -751,6 +751,7 @@ MonoBehaviour:
   corgiImage: {fileID: 1639885879}
   catImage: {fileID: 1318579884}
   dialogueText: {fileID: 134257361}
+  trashUI: {fileID: 1754895265}
 --- !u!1001 &230705364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1160,7 +1161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7901821
+      value: 1.043
       objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_LocalPosition.y
