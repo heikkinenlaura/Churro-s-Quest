@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-            transform.localScale = new Vector3(5, 5, 5); // Flip the sprite to face left
+            transform.localScale = new Vector3(1, 1, 1); // Flip the sprite to face left
             
             animator.SetBool("IsRunning", true);
         }
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-            transform.localScale = new Vector3(-5, 5, 5); // Flip the sprite to face right
+            transform.localScale = new Vector3(-1, 1, 1); // Flip the sprite to face right
             
             animator.SetBool("IsRunning", true);
         }
