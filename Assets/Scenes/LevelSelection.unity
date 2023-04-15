@@ -6316,7 +6316,7 @@ GameObject:
   - component: {fileID: 2109001996}
   - component: {fileID: 2109001995}
   m_Layer: 5
-  m_Name: FullRiver
+  m_Name: RiverBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
