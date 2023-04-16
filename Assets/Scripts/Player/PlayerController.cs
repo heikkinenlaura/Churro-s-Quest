@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -89,6 +90,14 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isAttacking", false);
         }
+
+        if(moveSpeed == 10)
+        {
+            animator.SetBool("isCrazy", true);
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("isJumping", false);
+            StartCoroutine(ResetSpeed());
+        }
     }
 
     // function to handle the bark attack
@@ -141,6 +150,15 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator ResetSpeed()
+    {
+        // Wait for the boostDuration to end
+
+        yield return new WaitForSeconds(4);
+        // Set player's speed back to normalSpeed
+        moveSpeed = 5;
+        animator.SetBool("isCrazy", false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

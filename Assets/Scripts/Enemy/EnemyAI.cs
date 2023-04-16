@@ -56,7 +56,7 @@ public class EnemyAI : MonoBehaviour
             if (transform.position.x > startingPosition.x + currentPatrolDistance)
             {
                 // Flip the sprite to face left
-                transform.localScale = new Vector3(-5, 5, 5); 
+                transform.localScale = new Vector3(-1, 1, 1); 
                 movingRight = false;
             }
         }
@@ -68,7 +68,7 @@ public class EnemyAI : MonoBehaviour
             if (transform.position.x < startingPosition.x - currentPatrolDistance)
             {
                 // Flip the sprite to face right
-                transform.localScale = new Vector3(5, 5, 5); 
+                transform.localScale = new Vector3(1, 1, 1); 
                 movingRight = true;
             }
         }
