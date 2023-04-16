@@ -1930,7 +1930,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 342774381c7619344a180c43f2ffa233, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a72dfa2c7cce9db479c7a074e093c482, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectItemSound: {fileID: 8300000, guid: 4817f6118c565934099a8287935efe6a, type: 3}
   collectCoinSound: {fileID: 8300000, guid: b1d968b0e58f8fa48b117dba8c46080e, type: 3}
-  collectBoneSound: {fileID: 0}
+  collectBoneSound: {fileID: 8300000, guid: c89896bdabb50d64f9af024b414409ef, type: 3}
   loseLifeSound: {fileID: 8300000, guid: 83a5766697524bc47b49d8980bf3e63f, type: 3}
   getLifeSound: {fileID: 8300000, guid: 3fe7e1c29adf5f64f8e08df143aca7f7, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 342774381c7619344a180c43f2ffa233, type: 3}

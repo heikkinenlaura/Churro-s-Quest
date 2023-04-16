@@ -2017,7 +2017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectItemSound: {fileID: 8300000, guid: 4817f6118c565934099a8287935efe6a, type: 3}
   collectCoinSound: {fileID: 8300000, guid: b1d968b0e58f8fa48b117dba8c46080e, type: 3}
-  collectBoneSound: {fileID: 0}
+  collectBoneSound: {fileID: 8300000, guid: c89896bdabb50d64f9af024b414409ef, type: 3}
   loseLifeSound: {fileID: 8300000, guid: 83a5766697524bc47b49d8980bf3e63f, type: 3}
   getLifeSound: {fileID: 8300000, guid: 3fe7e1c29adf5f64f8e08df143aca7f7, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 342774381c7619344a180c43f2ffa233, type: 3}
@@ -11211,3 +11211,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1036115519200031223, guid: 0200de642a364394085ad35d5b6eda00, type: 3}
   m_PrefabInstance: {fileID: 2130674242}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4904514279530109882
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -34.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.05405262
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691593, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904514280409691598, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 242237550}
+    - target: {fileID: 4904514280409691605, guid: 1224f477833105942856880c0a176382, type: 3}
+      propertyPath: m_Name
+      value: BearTrap
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1224f477833105942856880c0a176382, type: 3}
