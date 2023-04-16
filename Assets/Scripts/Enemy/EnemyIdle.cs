@@ -14,6 +14,7 @@ public class EnemyIdle : MonoBehaviour
     private enum State { Idle, Follow };
     private State currentState;
 
+    private bool facingRight;
 
     private void Start()
     {
@@ -42,6 +43,7 @@ public class EnemyIdle : MonoBehaviour
             animator.SetBool("IsRunning", true);
             currentState = State.Follow;
         }
+        Flip();
     }
 
     private void FollowPlayer()
@@ -54,6 +56,23 @@ public class EnemyIdle : MonoBehaviour
             {
                 animator.SetBool("IsRunning", false);
                 currentState = State.Idle;
+            }
+            Flip();
+        }
+    }
+    private void Flip()
+    {
+        if (playerTransform)
+        {
+            if (transform.position.x < playerTransform.position.x && !facingRight)
+            {
+                facingRight = true;
+                transform.localScale = new Vector3(-5, 5, 5);
+            }
+            else if (transform.position.x > playerTransform.position.x && facingRight)
+            {
+                facingRight = false;
+                transform.localScale = new Vector3(5, 5, 5);
             }
         }
     }
