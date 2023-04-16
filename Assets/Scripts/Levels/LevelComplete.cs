@@ -23,6 +23,17 @@ public class LevelComplete : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex - 1 == levelReached) // If the completed level is the current level reached
         {
             PlayerPrefs.SetInt("levelReached", levelReached + 1); // Increment levelReached to unlock the next level
+
+            // Update state of game objects based on completed level
+            if (levelReached == 1)
+            {
+                PlayerPrefs.SetInt("Level1Won", 1); // Hide Hidewhenlevel1won
+            }
+            else if (levelReached == 2)
+            {
+                PlayerPrefs.SetInt("Level2Won", 1); // Hide Hidewhenlevel1won
+            }
+
             PlayerPrefs.Save();
         }
 

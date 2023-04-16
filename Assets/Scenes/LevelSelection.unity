@@ -4717,6 +4717,7 @@ GameObject:
   - component: {fileID: 1588188684}
   - component: {fileID: 1588188686}
   - component: {fileID: 1588188687}
+  - component: {fileID: 1588188688}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -4837,6 +4838,21 @@ MonoBehaviour:
   collected: {fileID: 1164493054}
   notCollected1: {fileID: 56918721}
   collected1: {fileID: 2023031778}
+--- !u!114 &1588188688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588188682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3b0b9f5abf1a840ba7d67c170e7f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideWhenLevel1Won: {fileID: 773498700}
+  hideWhenLevel2Won: {fileID: 1583816760}
+  showWhenLevel2Won: {fileID: 1734459641}
 --- !u!1 &1597154370
 GameObject:
   m_ObjectHideFlags: 0
@@ -5488,7 +5504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24de6481ca1741439d04710252df9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 10
   item: {fileID: 1850362446}
   store: {fileID: 454281135}
   hat1ToBuy: {fileID: 1850362446}

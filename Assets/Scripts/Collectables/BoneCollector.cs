@@ -25,7 +25,7 @@ public class BoneCollector : MonoBehaviour
         GameManager.instance.AddScore(boneValue);
 
         // Increment bone count
-        PlayerStats.instance.BoneCount++;
+        PlayerStats.instance.BoneCount += 10;
 
         // Then, destroy the bone object:
         Destroy(gameObject);
