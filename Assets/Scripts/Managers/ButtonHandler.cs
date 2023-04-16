@@ -10,9 +10,6 @@ public class ButtonHandler : MonoBehaviour
     public GameObject notCollected;
     public GameObject collected;
 
-    public GameObject notCollected1;
-    public GameObject collected1;
-
     private void Start()
     {
         // Check if the GemCollected value is set
@@ -23,9 +20,6 @@ public class ButtonHandler : MonoBehaviour
 
             collected.SetActive(true);
             notCollected.SetActive(false);
-
-            collected1.SetActive(true);
-            notCollected1.SetActive(false);
         }
         else
         {
