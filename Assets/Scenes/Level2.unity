@@ -6558,8 +6558,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 2041758149}
     m_Modifications:
     - target: {fileID: 4257625244223111516, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257625244223111516, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
       propertyPath: m_SortingOrder
-      value: 61
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257625244223111516, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1327606645
       objectReference: {fileID: 0}
     - target: {fileID: 5104082491283249076, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
       propertyPath: m_RootOrder
@@ -6647,7 +6655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8108495151103582460, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
       propertyPath: m_SortingOrder
-      value: 60
+      value: 49
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5920285202605335032, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
