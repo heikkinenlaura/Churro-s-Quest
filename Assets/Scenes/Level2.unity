@@ -330,6 +330,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3912705549685899958, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 4240552984304165964, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
       propertyPath: m_Name
       value: Food (5)
@@ -1512,6 +1516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3072046951665688191, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 8400733483062642955, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -2003,6 +2011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectItemSound: {fileID: 8300000, guid: 4817f6118c565934099a8287935efe6a, type: 3}
   collectCoinSound: {fileID: 8300000, guid: b1d968b0e58f8fa48b117dba8c46080e, type: 3}
+  collectBoneSound: {fileID: 0}
   loseLifeSound: {fileID: 8300000, guid: 83a5766697524bc47b49d8980bf3e63f, type: 3}
   getLifeSound: {fileID: 8300000, guid: 3fe7e1c29adf5f64f8e08df143aca7f7, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 342774381c7619344a180c43f2ffa233, type: 3}
@@ -3362,6 +3371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3072046951665688191, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 8400733483062642955, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -5445,6 +5458,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3912705549685899958, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 4240552984304165964, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
       propertyPath: m_Name
       value: Food
@@ -9908,6 +9925,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3912705549685899958, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 4240552984304165964, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
       propertyPath: m_Name
       value: Food (1)
@@ -11216,6 +11237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 3072046951665688191, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 8400733483062642955, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -11889,6 +11914,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3912705549685899958, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 4240552984304165964, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
       propertyPath: m_Name
       value: Food (2)
@@ -12578,6 +12607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3072046951665688191, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 8400733483062642955, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -13076,6 +13109,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3912705549685899958, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 4240552984304165964, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
       propertyPath: m_Name
       value: Food (4)
@@ -13111,6 +13148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potion (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3072046951665688191, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 8400733483062642955, guid: a15ced7feb815be47b1250ecb001b4d0, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -13618,6 +13659,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3912705549685899958, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
+      propertyPath: audioHandler
+      value: 
+      objectReference: {fileID: 213389883}
     - target: {fileID: 4240552984304165964, guid: b948a33337cebe448b12de627cc1da1a, type: 3}
       propertyPath: m_Name
       value: Food (3)

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class BoneCollector : MonoBehaviour
 {
     public int boneValue = 10;
+    public AudioHandler audioHandler;
 
     // Method to handle bone collection
     void Collect()
@@ -39,6 +40,7 @@ public class BoneCollector : MonoBehaviour
         {
             // Call the Collect method
             Collect();
+            audioHandler.PlayCollectBoneSound();
         }
     }
 }

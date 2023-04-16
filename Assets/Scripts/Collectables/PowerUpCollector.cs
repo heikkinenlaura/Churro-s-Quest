@@ -12,8 +12,6 @@ public class PowerUpCollector : MonoBehaviour
     public float boostDuration = 2f; 
     public AudioHandler audioHandler;
 
-    private bool isCoroutineRunning = false;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

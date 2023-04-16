@@ -7,6 +7,7 @@ public class AudioHandler : MonoBehaviour
     //public AudioClip playerWalkingSound;
     public AudioClip collectItemSound;
     public AudioClip collectCoinSound;
+    public AudioClip collectBoneSound;
     public AudioClip loseLifeSound;
     public AudioClip getLifeSound;
     public AudioClip backgroundMusic;
@@ -66,7 +67,10 @@ public class AudioHandler : MonoBehaviour
     {
         PlaySound(getLifeSound);
     }
-
+    public void PlayCollectBoneSound()
+    {
+        PlaySound(collectBoneSound);
+    }
     public void PlayBackgroundMusic()
     {
         audioSource.clip = backgroundMusic;

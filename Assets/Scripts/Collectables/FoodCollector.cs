@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FoodCollector : MonoBehaviour
 {
+    public AudioHandler audioHandler;
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the colliding gameobject has the tag "Player"
@@ -15,6 +16,7 @@ public class FoodCollector : MonoBehaviour
             // Check if the PlayerHealth component was successfully obtained
             if (corgi != null)
             {
+                audioHandler.PlayCollectPowerUpSound();
                 // Call the CollectFood method of the PlayerHealth component to increment the food count
                 corgi.CollectFood();
 
