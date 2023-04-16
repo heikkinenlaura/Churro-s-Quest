@@ -41,7 +41,6 @@ public class LevelSelection : MonoBehaviour
                 if (highScore > 0 && highScore <= 10)
                 {
                     medalIcons[i].sprite = bronzeMedalSprite;
-                    Debug.Log(highScore + " should be bronze");
                 }
                 else if (highScore > 10 && highScore <= 30)
                 {

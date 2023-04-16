@@ -8,9 +8,6 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10f;
     private bool isGrounded = true;
 
-    // Flag indicating whether the player is invincible
-    public bool isInvincible = false;
-
     // reference to the animator component
     private Animator animator;
 
@@ -19,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
     // reference to the bark sound effect
     public AudioHandler audioHandler;
+
+    // default behavior is to bark
+    public bool shouldBark = true; 
 
     private void Start()
     {
@@ -74,9 +74,16 @@ public class PlayerController : MonoBehaviour
         // attack
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            Bark();
-            animator.SetBool("IsRunning", false); // stop the running animation
-            animator.SetBool("isAttacking", true); // play the attack animation
+            if (shouldBark)
+            {
+                Bark();
+                animator.SetBool("IsRunning", false); // stop the running animation
+                animator.SetBool("isAttacking", true); // play the attack animation
+            }
+            else
+            {
+                PutOutFire();
+            }
         }
         else
         {
@@ -112,6 +119,25 @@ public class PlayerController : MonoBehaviour
                 {
                     // decrease the boss's health
                     bossHealth.TakeDamage(20);
+                }
+            }
+        }
+    }
+    private void PutOutFire()
+    {
+        Debug.Log("Water animation");
+        // check for enemies within a certain distance of the player
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2f);
+
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.gameObject.CompareTag("Fire"))
+            {
+                FireExtinguisher fireExtinguisher = collider.gameObject.GetComponent<FireExtinguisher>();
+                if (fireExtinguisher != null)
+                {
+                    Debug.Log("Add the water animation here!");
+                    fireExtinguisher.ExtinguishFire();
                 }
             }
         }
