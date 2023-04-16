@@ -79,13 +79,13 @@ public class EnemyIdle : MonoBehaviour
             if (transform.position.x < playerTransform.position.x && !facingRight)
             {
                 facingRight = true;
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(1, 1, 1);
             }
             // If the player is to the left of the enemy and the enemy is facing right, flip the sprite
             else if (transform.position.x > playerTransform.position.x && facingRight)
             {
                 facingRight = false;
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(-1, 1, 1);
             }
         }
     }
