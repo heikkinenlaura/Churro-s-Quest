@@ -38,15 +38,15 @@ public class LevelSelection : MonoBehaviour
                 // Load and display high score for this level
                 int highScore = PlayerPrefs.GetInt("Level_" + (i + 1) + "_HighScore", 0);
                 // Set the medal icon based on the high score
-                if (highScore > 0 && highScore <= 10)
+                if (highScore > 0 && highScore <= 70)
                 {
                     medalIcons[i].sprite = bronzeMedalSprite;
                 }
-                else if (highScore > 10 && highScore <= 30)
+                else if (highScore >70 && highScore <= 150)
                 {
                     medalIcons[i].sprite = silverMedalSprite;
                 }
-                else if (highScore > 30)
+                else if (highScore > 150)
                 {
                     medalIcons[i].sprite = goldMedalSprite;
                 }
