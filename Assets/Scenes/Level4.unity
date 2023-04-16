@@ -1486,6 +1486,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165587574}
   m_CullTransparentMesh: 1
+--- !u!114 &169286854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4330986180179133480, guid: 7ad008cdf303981429cc2029cec1aca6, type: 3}
+  m_PrefabInstance: {fileID: 56115200}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &170132003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2141,7 +2152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b358dbebe18234f8c8cc15a025a18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 45
+  timeRemaining: 90
   timerText: {fileID: 416574344}
   losePanel: {fileID: 1385365261}
 --- !u!1 &226139492
@@ -4050,6 +4061,7 @@ GameObject:
   - component: {fileID: 575598345}
   - component: {fileID: 575598348}
   - component: {fileID: 575598347}
+  - component: {fileID: 575598349}
   m_Layer: 5
   m_Name: StoryTellingPanel
   m_TagString: Untagged
@@ -4118,6 +4130,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575598344}
   m_CullTransparentMesh: 1
+--- !u!114 &575598349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575598344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbb428e475bfbd4cbbccf0cfb95a29c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corgiImage: {fileID: 169286854}
+  catImage: {fileID: 661405200}
+  dialogueText: {fileID: 433574918}
+  animalPanel: {fileID: 165587574}
 --- !u!1 &614793028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,6 +4364,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627224491}
   m_CullTransparentMesh: 1
+--- !u!114 &661405200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2027949922077109139, guid: 0e197f8573183cf4eb82ea7111e52808, type: 3}
+  m_PrefabInstance: {fileID: 143298094}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &687657850
 PrefabInstance:
   m_ObjectHideFlags: 0
