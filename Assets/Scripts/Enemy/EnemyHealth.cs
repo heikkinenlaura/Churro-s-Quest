@@ -7,14 +7,17 @@ public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     private int currentHealth;
-    public TMP_Text healthText; // Reference to the text element in the UI
+
+    // Reference to the text element in the UI
+    public TMP_Text healthText; 
     public Canvas canvas;
 
 
     private void Start()
     {
         currentHealth = maxHealth;
-        UpdateHealthText(); // Update the health text when the enemy is spawned
+        // Update the health text when the enemy is spawned
+        UpdateHealthText(); 
     }
     void Update()
     {
@@ -23,7 +26,8 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        UpdateHealthText(); // Update the health text whenever the enemy takes damage
+        // Update the health text whenever the enemy takes damage
+        UpdateHealthText(); 
 
         if (currentHealth <= 0)
         {
@@ -40,7 +44,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void UpdateHealthText()
     {
-        healthText.text = " " + currentHealth; // Update the text to display the current health
-
+        // Update the text to display the current health
+        healthText.text = " " + currentHealth; 
     }
 }

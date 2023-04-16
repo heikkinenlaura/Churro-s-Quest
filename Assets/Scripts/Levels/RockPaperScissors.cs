@@ -15,19 +15,27 @@ public class RockPaperScissors : MonoBehaviour
 
     void Start()
     {
+        // Set up listeners for the rock, paper, and scissors buttons
         rockButton.onClick.AddListener(() => { PlayerChoice(0); });
         paperButton.onClick.AddListener(() => { PlayerChoice(1); });
         scissorsButton.onClick.AddListener(() => { PlayerChoice(2); });
-        resultText.text = "And AI will choose ";
+
+        // Set the initial text for the result and AI choice text objects
+        resultText.text = "And Cat will choose ";
         aiChoiceText.text = "Choose ";
     }
 
     void PlayerChoice(int playerChoice)
     {
+        // Randomly generate a choice for the AI
         aiChoice = Random.Range(0, 3);
-        aiChoiceText.text = "AI chose: " + GetChoiceString(aiChoice);
 
+        // Update the AI choice text object with the choice string
+        aiChoiceText.text = "Cat chose: " + GetChoiceString(aiChoice);
+
+        // Determine the result of the game based on the player and AI choices
         int result = GetResult(playerChoice, aiChoice);
+        // Update the result text object with the appropriate message based on the result
         if (result == 0)
         {
             resultText.text = "It's a tie!";
@@ -46,15 +54,18 @@ public class RockPaperScissors : MonoBehaviour
     {
         if (playerChoice == aiChoice)
         {
-            return 0; // tie
+            // tie
+            return 0; 
         }
         else if ((playerChoice == 0 && aiChoice == 2) || (playerChoice == 1 && aiChoice == 0) || (playerChoice == 2 && aiChoice == 1))
         {
-            return 1; // player wins
+            // player wins
+            return 1; 
         }
         else
         {
-            return -1; // player loses
+            // player loses
+            return -1; 
         }
     }
 

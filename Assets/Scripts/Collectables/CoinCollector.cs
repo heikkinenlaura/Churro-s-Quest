@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class CoinCollector : MonoBehaviour
 {
-    public int coinValue = 1; // The amount of coins the player receives for collecting this coin
+    // The amount of coins the player receives for collecting this coin
+    public int coinValue = 10;
     public AudioHandler audioHandler;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) // Check if the player has collided with the coin
+        // Check if the player has collided with the coin
+        if (other.CompareTag("Player")) 
         {
-            PlayerStats.instance.IncreaseCoins(coinValue); // Increase the coin count in PlayerStats
-            GameManager.instance.AddCoins(coinValue); // Increase the coin count in the GameManager
+            // Increase the coin count in PlayerStats
+            PlayerStats.instance.IncreaseCoins(coinValue); 
+
+            // Increase the coin count in the GameManager
+            GameManager.instance.AddCoins(coinValue);
+
             audioHandler.PlayCollectCoinSound();
-            Destroy(gameObject); // Destroy the coin object
+
+            // Destroy the coin object
+            Destroy(gameObject); 
         }
     }
 }

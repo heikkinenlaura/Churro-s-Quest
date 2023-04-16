@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PowerUpCollector : MonoBehaviour
 {
-    public float boostedSpeed = 10f; // the speed to set when the power-up is collected
-    public float normalSpeed = 5f; // the speed to set after the boost duration
-    public float boostDuration = 2f; // the duration of the speed boost in seconds
+    // the speed to set when the power-up is collected
+    public float boostedSpeed = 10f;
+    // the speed to set after the boost duration
+    public float normalSpeed = 5f;
+    // the duration of the speed boost in seconds
+    public float boostDuration = 2f; 
     public AudioHandler audioHandler;
 
     private void OnTriggerEnter2D(Collider2D other)

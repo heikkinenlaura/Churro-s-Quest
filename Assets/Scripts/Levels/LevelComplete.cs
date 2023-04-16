@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelComplete : MonoBehaviour
 {
-    public int nextLevelIndex; // The build index of the next level to unlock
+    // The build index of the next level to unlock
+    public int nextLevelIndex; 
 
     public void NextLevel()
     {
@@ -16,22 +17,28 @@ public class LevelComplete : MonoBehaviour
         {
             PlayerPrefs.SetInt("Level_" + (SceneManager.GetActiveScene().buildIndex - 1) + "_HighScore", boneCount);
             PlayerPrefs.Save();
-            highScore = boneCount; // Update high score variable
+            // Update high score variable
+            highScore = boneCount; 
         }
         // Unlock the next level
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);
-        if (SceneManager.GetActiveScene().buildIndex - 1 == levelReached) // If the completed level is the current level reached
+
+        // If the completed level is the current level reached
+        if (SceneManager.GetActiveScene().buildIndex - 1 == levelReached) 
         {
-            PlayerPrefs.SetInt("levelReached", levelReached + 1); // Increment levelReached to unlock the next level
+            // Increment levelReached to unlock the next level
+            PlayerPrefs.SetInt("levelReached", levelReached + 1); 
 
             // Update state of game objects based on completed level
             if (levelReached == 1)
             {
-                PlayerPrefs.SetInt("Level1Won", 1); // Hide Hidewhenlevel1won
+                // Hide Hidewhenlevel1won
+                PlayerPrefs.SetInt("Level1Won", 1); 
             }
             else if (levelReached == 2)
             {
-                PlayerPrefs.SetInt("Level2Won", 1); // Hide Hidewhenlevel1won
+                // Hide Hidewhenlevel1won
+                PlayerPrefs.SetInt("Level2Won", 1); 
             }
 
             PlayerPrefs.Save();

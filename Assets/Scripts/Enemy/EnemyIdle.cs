@@ -11,6 +11,7 @@ public class EnemyIdle : MonoBehaviour
     private Vector3 startingPosition;
     private Animator animator;
 
+    // Define an enum to keep track of the current state of the Enemy
     private enum State { Idle, Follow };
     private State currentState;
 
@@ -18,13 +19,18 @@ public class EnemyIdle : MonoBehaviour
 
     private void Start()
     {
+        // Store the starting position of the enemy
         startingPosition = transform.position;
+
         animator = GetComponent<Animator>();
+
+        // Set the initial state to idle
         currentState = State.Idle;
     }
 
     private void Update()
     {
+        // Depending on the current state of the enemy, call the corresponding method
         switch (currentState)
         {
             case State.Idle:
@@ -38,11 +44,13 @@ public class EnemyIdle : MonoBehaviour
 
     private void Idle()
     {
+        // Check if player is within detect distance and transition to follow state if true
         if (playerTransform && Vector2.Distance(playerTransform.position, transform.position) < detectDistance)
         {
             animator.SetBool("IsRunning", true);
             currentState = State.Follow;
         }
+        // Flip the sprite if necessary
         Flip();
     }
 
@@ -50,13 +58,16 @@ public class EnemyIdle : MonoBehaviour
     {
         if (playerTransform)
         {
+            // Move towards the player's position
             transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, moveSpeed * Time.deltaTime);
 
+            // If the player is outside of the detect distance, transition to idle state
             if (Vector2.Distance(playerTransform.position, transform.position) > detectDistance)
             {
                 animator.SetBool("IsRunning", false);
                 currentState = State.Idle;
             }
+            // Flip the sprite if necessary
             Flip();
         }
     }
@@ -64,11 +75,13 @@ public class EnemyIdle : MonoBehaviour
     {
         if (playerTransform)
         {
+            // If the player is to the right of the enemy and the enemy is facing left, flip the sprite
             if (transform.position.x < playerTransform.position.x && !facingRight)
             {
                 facingRight = true;
                 transform.localScale = new Vector3(-5, 5, 5);
             }
+            // If the player is to the left of the enemy and the enemy is facing right, flip the sprite
             else if (transform.position.x > playerTransform.position.x && facingRight)
             {
                 facingRight = false;
@@ -79,6 +92,7 @@ public class EnemyIdle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Set the player transform when entering the player's trigger zone
         if (collision.gameObject.CompareTag("Player"))
         {
             playerTransform = collision.transform;
@@ -87,6 +101,7 @@ public class EnemyIdle : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        // Set the player transform to null and go back to patrol state when leaving the player's trigger zone
         if (collision.gameObject.CompareTag("Player"))
         {
             playerTransform = null;
@@ -96,6 +111,7 @@ public class EnemyIdle : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Damage the player's health if the enemy collides with them
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();

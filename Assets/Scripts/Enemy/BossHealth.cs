@@ -4,36 +4,40 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-    public int maxHealth = 1000;
+    public int maxHealth = 100;
     private int currentHealth;
 
-    public GameObject winningPanel; // Reference to the panel to be displayed when the boss is defeated
-    public float winDelay = 2f; // Delay before displaying the winning panel
+    // Reference to the panel to be displayed when the boss is defeated
+    public GameObject winningPanel;
+
+    // Delay before displaying the winning panel
+    public float winDelay = 2f; 
 
     public LevelComplete levelComplete;
 
     private void Start()
     {
+        // Set the current health to the maximum health when the object is created
         currentHealth = maxHealth;
     }
 
+    // Function to decrease the health by a specified amount
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("Current health: " + currentHealth); // Debug the current health
 
-
+        // Check if the health has dropped to zero or below
         if (currentHealth <= 0)
         {
+            // Call the Die function 
             Die();
         }
     }
 
+    // Function to handle the death of the wall
     private void Die()
     {
         // TODO: Play an animation that shows the wall breaking.
-        // TODO: Add a delay to allow the animation to finish playing.
-        // TODO: Show a winning panel to indicate that the player has won the level.
 
         // Disable the boss enemy object
         gameObject.SetActive(false);
