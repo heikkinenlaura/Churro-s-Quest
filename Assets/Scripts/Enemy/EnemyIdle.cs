@@ -86,6 +86,7 @@ public class EnemyIdle : MonoBehaviour
             {
                 facingRight = false;
                 transform.localScale = new Vector3(-1, 1, 1);
+                gameObject.transform.GetChild(0).localScale = new Vector3(1, 1, 1);
             }
         }
     }
