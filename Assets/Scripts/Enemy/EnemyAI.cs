@@ -57,7 +57,6 @@ public class EnemyAI : MonoBehaviour
             {
                 // Flip the sprite to face left
                 transform.localScale = new Vector3(-1, 1, 1);
-                gameObject.transform.GetChild(0).localScale = new Vector3(1, 1, 1);
                 movingRight = false;
             }
         }
