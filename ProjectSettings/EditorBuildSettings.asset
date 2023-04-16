@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniGame.unity
     guid: 659d6d270dedf084a8d13cf9207f0058
   m_configObjects:
-    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: edd7a67366b992b4ebedc25953812290, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: c603b18058724be4894ca0c9cb700194, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 1c50081a6ff60f842887b089d5476512, type: 2}
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: e7d1d01140a8e6b459140a89635a4bf1, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: acc66ec60e6a60147baa08c650c66ec1, type: 2}
