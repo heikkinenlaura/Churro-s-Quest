@@ -106,7 +106,7 @@ public class EnemyIdle : MonoBehaviour
         {
             playerTransform = null;
             currentState = State.Idle;
-
+            animator.SetBool("IsRunning", false);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
