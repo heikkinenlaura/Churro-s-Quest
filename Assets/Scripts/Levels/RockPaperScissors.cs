@@ -6,12 +6,15 @@ public class RockPaperScissors : MonoBehaviour
 {
     public TMP_Text resultText;
     public TMP_Text aiChoiceText;
+    public TMP_Text coinCountText;
 
     public Button rockButton;
     public Button paperButton;
     public Button scissorsButton;
 
     private int aiChoice;
+    private int coinValue = 1;
+    public PlayerStats playerStats;
 
     void Start()
     {
@@ -23,6 +26,7 @@ public class RockPaperScissors : MonoBehaviour
         // Set the initial text for the result and AI choice text objects
         resultText.text = "And Cat will choose ";
         aiChoiceText.text = "Choose ";
+        coinCountText.text = "Coins: " + playerStats.CoinCount.ToString();
     }
 
     void PlayerChoice(int playerChoice)
@@ -42,7 +46,12 @@ public class RockPaperScissors : MonoBehaviour
         }
         else if (result == 1)
         {
-            resultText.text = "You win!";
+            resultText.text = "You win 1 coin!";
+            // Increase the coin count in PlayerStats
+            playerStats.IncreaseCoins(coinValue);
+            // Update the coin count text object
+            coinCountText.text = "Coins: " + playerStats.CoinCount.ToString();
+
         }
         else
         {

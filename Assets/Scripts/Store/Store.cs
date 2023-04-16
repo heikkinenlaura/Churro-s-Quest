@@ -84,17 +84,20 @@ public class Store : MonoBehaviour
                     {
                         if (purchasedItem == buyButton.hat1ToBuy)
                         {
-                            buyButton.hat1ToBuy.GetComponent<Button>().GetComponent<Image>().color = Color.gray;
+                            buyButton.hat1ToBuy.GetComponent<Button>().interactable = false;
+                            buyButton.hat1ToBuy.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = Color.gray;
                             buyButton.hat4ToActivate.SetActive(true);
                         }
                         else if (purchasedItem == buyButton.hat2ToBuy)
                         {
-                            buyButton.hat2ToBuy.GetComponent<Button>().GetComponent<Image>().color = Color.gray;
+                            buyButton.hat2ToBuy.GetComponent<Button>().interactable = false;
+                            buyButton.hat2ToBuy.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = Color.gray;
                             buyButton.hat5ToActivate.SetActive(true);
                         }
                         else if (purchasedItem == buyButton.hat3ToBuy)
                         {
-                            buyButton.hat3ToBuy.GetComponent<Button>().GetComponent<Image>().color = Color.gray;
+                            buyButton.hat3ToBuy.GetComponent<Button>().interactable = false;
+                            buyButton.hat3ToBuy.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = Color.gray;
                             buyButton.hat6ToActivate.SetActive(true);
                         }
                     }
@@ -119,7 +122,7 @@ public class Store : MonoBehaviour
             itemToActivate.SetActive(true);
 
             // Disable the item's button and change its color to gray
-            Button itemButton = itemToBuy.GetComponent<Button>();
+            Button itemButton = itemToBuy.transform.GetChild(0).GetComponent<Button>();
             if (itemButton != null)
             {
                 itemButton.interactable = false;

@@ -58,6 +58,8 @@ public class PlayerStats : MonoBehaviour
         if (currentCoins > maxCoins)
         {
             maxCoins = currentCoins;
+            PlayerPrefs.SetInt("CoinCount", currentCoins);
+            PlayerPrefs.Save();
         }
     }
 
