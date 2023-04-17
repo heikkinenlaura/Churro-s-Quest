@@ -3260,6 +3260,10 @@ PrefabInstance:
       propertyPath: trashCountText
       value: 
       objectReference: {fileID: 899642009}
+    - target: {fileID: 4180769144294977240, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
+      propertyPath: requiredTrashCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -8256,6 +8260,10 @@ PrefabInstance:
       propertyPath: trashCountText
       value: 
       objectReference: {fileID: 899642009}
+    - target: {fileID: 4180769144294977240, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
+      propertyPath: requiredTrashCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -9951,6 +9959,10 @@ PrefabInstance:
       propertyPath: trashCountText
       value: 
       objectReference: {fileID: 899642009}
+    - target: {fileID: 4180769144294977240, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
+      propertyPath: requiredTrashCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -10591,6 +10603,10 @@ PrefabInstance:
       propertyPath: trashCountText
       value: 
       objectReference: {fileID: 899642009}
+    - target: {fileID: 4180769144294977240, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
+      propertyPath: requiredTrashCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -14462,6 +14478,10 @@ PrefabInstance:
       propertyPath: trashCountText
       value: 
       objectReference: {fileID: 899642009}
+    - target: {fileID: 4180769144294977240, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
+      propertyPath: requiredTrashCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4180769144294977241, guid: 09dcf98b60f7b2940b4b9dbb87adbb96, type: 3}
       propertyPath: m_RootOrder
       value: 21

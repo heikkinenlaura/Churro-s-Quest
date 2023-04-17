@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public AudioHandler audioHandler;
 
     // default behavior is to bark
-    public bool shouldBark = true; 
+    public bool shouldBark = true;
 
     private void Start()
     {
@@ -84,6 +84,8 @@ public class PlayerController : MonoBehaviour
             else
             {
                 PutOutFire();
+                animator.SetBool("IsRunning", false);
+                animator.SetBool("isAttacking", true);
             }
         }
         else
@@ -130,11 +132,20 @@ public class PlayerController : MonoBehaviour
                     bossHealth.TakeDamage(20);
                 }
             }
+            else if (collider.gameObject.CompareTag("Prison"))
+            {
+                // get a reference to the boss's health component
+                PrisonDoor prison = collider.gameObject.GetComponent<PrisonDoor>();
+                if (prison != null)
+                {
+                    prison.childObject.SetActive(true);
+                    prison.openedDoors++;
+                }
+            }
         }
     }
     private void PutOutFire()
     {
-        Debug.Log("Water animation");
         // check for enemies within a certain distance of the player
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2f);
 
@@ -145,7 +156,7 @@ public class PlayerController : MonoBehaviour
                 FireExtinguisher fireExtinguisher = collider.gameObject.GetComponent<FireExtinguisher>();
                 if (fireExtinguisher != null)
                 {
-                    Debug.Log("Add the water animation here!");
+                    animator.SetBool("isAttacking", true);
                     fireExtinguisher.ExtinguishFire();
                 }
             }

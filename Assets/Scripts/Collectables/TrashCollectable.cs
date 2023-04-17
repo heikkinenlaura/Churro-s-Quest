@@ -6,7 +6,7 @@ public class TrashCollectable : MonoBehaviour
     public TMP_Text trashCountText;
 
     // The number of trash items that need to be collected to complete the level
-    public int requiredTrashCount = 10;
+    public int requiredTrashCount = 5;
 
     public LevelComplete levelComplete;
 

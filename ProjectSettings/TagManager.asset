@@ -10,6 +10,7 @@ TagManager:
   - DiePanel
   - Boss
   - Fire
+  - Prison
   layers:
   - Default
   - TransparentFX

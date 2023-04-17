@@ -86,19 +86,25 @@ public class Store : MonoBehaviour
                         {
                             buyButton.hat1ToBuy.GetComponent<Button>().interactable = false;
                             buyButton.hat1ToBuy.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = Color.gray;
-                            buyButton.hat4ToActivate.SetActive(true);
+                            buyButton.hat1ToActivate.SetActive(true);
                         }
                         else if (purchasedItem == buyButton.hat2ToBuy)
                         {
                             buyButton.hat2ToBuy.GetComponent<Button>().interactable = false;
                             buyButton.hat2ToBuy.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = Color.gray;
-                            buyButton.hat5ToActivate.SetActive(true);
+                            buyButton.hat2ToActivate.SetActive(true);
                         }
                         else if (purchasedItem == buyButton.hat3ToBuy)
                         {
                             buyButton.hat3ToBuy.GetComponent<Button>().interactable = false;
                             buyButton.hat3ToBuy.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = Color.gray;
-                            buyButton.hat6ToActivate.SetActive(true);
+                            buyButton.hat3ToActivate.SetActive(true);
+                        }
+                        else if (purchasedItem == buyButton.hat4ToBuy)
+                        {
+                            buyButton.hat4ToBuy.GetComponent<Button>().interactable = false;
+                            buyButton.hat4ToBuy.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().color = Color.gray;
+                            buyButton.hat4ToActivate.SetActive(true);
                         }
                     }
                 }
