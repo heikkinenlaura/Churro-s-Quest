@@ -7,15 +7,20 @@ public class PrisonDoor : MonoBehaviour
 {
     public GameObject childObject;
     public GameObject winPanel;
-    public int openedDoors = 0;
+    private static int openedDoors;
     public TMP_Text openedDoorsText;
 
-    private void Update()
+    public void Update()
     {
-        openedDoorsText.text = "Opened Doors: " + openedDoors.ToString() + " / 10";
-        if (openedDoors >= 10)
+        openedDoorsText.text = "Opened Doors: " + openedDoors.ToString() + " / 7";
+
+        if (openedDoors >= 7)
         {
             winPanel.SetActive(true);
         }
+    }
+    public void OpenDoor()
+    {
+        openedDoors++;
     }
 }

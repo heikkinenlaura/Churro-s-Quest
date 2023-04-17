@@ -21,6 +21,9 @@ public class PlayerController : MonoBehaviour
     // default behavior is to bark
     public bool shouldBark = true;
 
+    private bool hasCollidedWithPrison = false;
+    private bool isFireExtinguished = false;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -134,33 +137,46 @@ public class PlayerController : MonoBehaviour
             }
             else if (collider.gameObject.CompareTag("Prison"))
             {
-                // get a reference to the boss's health component
-                PrisonDoor prison = collider.gameObject.GetComponent<PrisonDoor>();
-                if (prison != null)
+                if (!hasCollidedWithPrison && collider.gameObject.CompareTag("Prison"))
                 {
-                    prison.childObject.SetActive(true);
-                    prison.openedDoors++;
+                    PrisonDoor prison = collider.gameObject.GetComponent<PrisonDoor>();
+                    if (prison != null)
+                    {
+                        prison.childObject.SetActive(true);
+                        prison.OpenDoor();
+                        hasCollidedWithPrison = true;
+                        // break out of the loop to prevent checking other colliders
+                        break;
+                    }
                 }
+                hasCollidedWithPrison = false;
             }
         }
     }
     private void PutOutFire()
     {
-        // check for enemies within a certain distance of the player
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2f);
-
-        foreach (Collider2D collider in colliders)
+        if (!isFireExtinguished)
         {
-            if (collider.gameObject.CompareTag("Fire"))
+            // check for enemies within a certain distance of the player
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2f);
+
+            foreach (Collider2D collider in colliders)
             {
-                FireExtinguisher fireExtinguisher = collider.gameObject.GetComponent<FireExtinguisher>();
-                if (fireExtinguisher != null)
+                if (collider.gameObject.CompareTag("Fire"))
                 {
-                    animator.SetBool("isAttacking", true);
-                    fireExtinguisher.ExtinguishFire();
+                    FireExtinguisher fireExtinguisher = collider.gameObject.GetComponent<FireExtinguisher>();
+                    if (fireExtinguisher != null)
+                    {
+                        animator.SetBool("isAttacking", true);
+                        fireExtinguisher.ExtinguishFire();
+                        isFireExtinguished = true;
+                        // break out of the loop to prevent checking other colliders
+                        break;
+                    }
                 }
             }
         }
+        isFireExtinguished = false;
     }
     IEnumerator ResetSpeed()
     {
