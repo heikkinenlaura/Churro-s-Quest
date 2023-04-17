@@ -10,7 +10,7 @@ public class DialogueSystem : MonoBehaviour
     public Image catImage;            // A reference to the cat image UI element
     public TMP_Text dialogueText;     // A reference to the dialogue text UI element
 
-    private string[] corgiDialogue = { "Hello there!", "I need your help.", "The animals in this forest are being denied access to clean water.", "We need to stop the corrupt corporation that's polluting our water supply." };
+    private string[] corgiDialogue = { "Hey there! ", "I need your help.", "The animals in this forest are being denied access to clean water.", " ", "If you want to get rid of that dam, I think you need to use your loud bark to break it" };
     // An array of strings containing the corgi's dialogue lines
     private string[] catDialogue = { "I'm ready to help.", "What can I do?", "Lead the way.", "Let's save our animals." };
     // An array of strings containing the cat's dialogue lines
