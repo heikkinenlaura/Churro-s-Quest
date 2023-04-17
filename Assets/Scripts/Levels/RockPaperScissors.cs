@@ -12,6 +12,16 @@ public class RockPaperScissors : MonoBehaviour
     public Button paperButton;
     public Button scissorsButton;
 
+    public GameObject playerSprite;
+    public Sprite rock;
+    public Sprite paper;
+    public Sprite scissors;
+
+    public GameObject aiSprite;
+    public Sprite catRock;
+    public Sprite catPaper;
+    public Sprite catScissors;
+
     private int aiChoice;
     private int coinValue = 1;
     public PlayerStats playerStats;
@@ -19,9 +29,9 @@ public class RockPaperScissors : MonoBehaviour
     void Start()
     {
         // Set up listeners for the rock, paper, and scissors buttons
-        rockButton.onClick.AddListener(() => { PlayerChoice(0); });
-        paperButton.onClick.AddListener(() => { PlayerChoice(1); });
-        scissorsButton.onClick.AddListener(() => { PlayerChoice(2); });
+        rockButton.onClick.AddListener(() => { PlayerChoice(0); playerSprite.GetComponent<Image>().sprite = rock;});
+        paperButton.onClick.AddListener(() => { PlayerChoice(1); playerSprite.GetComponent<Image>().sprite = paper; });
+        scissorsButton.onClick.AddListener(() => { PlayerChoice(2); playerSprite.GetComponent<Image>().sprite = scissors;});
 
         // Set the initial text for the result and AI choice text objects
         resultText.text = "And Cat will choose ";
@@ -83,10 +93,13 @@ public class RockPaperScissors : MonoBehaviour
         switch (choice)
         {
             case 0:
+                aiSprite.GetComponent<Image>().sprite = catRock;
                 return "Rock";
             case 1:
+                aiSprite.GetComponent<Image>().sprite = catPaper;
                 return "Paper";
             case 2:
+                aiSprite.GetComponent<Image>().sprite = catScissors;
                 return "Scissors";
             default:
                 return "";
