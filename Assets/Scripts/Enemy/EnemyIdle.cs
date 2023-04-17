@@ -26,6 +26,9 @@ public class EnemyIdle : MonoBehaviour
 
         // Set the initial state to idle
         currentState = State.Idle;
+
+        transform.localScale = new Vector3(-1, 1, 1);
+        gameObject.transform.GetChild(0).localScale = new Vector3(-1, 1, 1);
     }
 
     private void Update()
@@ -80,13 +83,15 @@ public class EnemyIdle : MonoBehaviour
             {
                 facingRight = true;
                 transform.localScale = new Vector3(1, 1, 1);
+
+                gameObject.transform.GetChild(0).localScale = new Vector3(1, 1, 1);
             }
             // If the player is to the left of the enemy and the enemy is facing right, flip the sprite
             else if (transform.position.x > playerTransform.position.x && facingRight)
             {
                 facingRight = false;
                 transform.localScale = new Vector3(-1, 1, 1);
-                gameObject.transform.GetChild(0).localScale = new Vector3(1, 1, 1);
+                gameObject.transform.GetChild(0).localScale = new Vector3(-1, 1, 1);
             }
         }
     }
