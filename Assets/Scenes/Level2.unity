@@ -6576,15 +6576,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4257625244223111516, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
       propertyPath: m_SortingLayer
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4257625244223111516, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
-      propertyPath: m_SortingOrder
-      value: 49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4257625244223111516, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1327606645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5104082491283249076, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
       propertyPath: m_RootOrder
@@ -6669,10 +6661,6 @@ PrefabInstance:
     - target: {fileID: 5920285202605335032, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108495151103582460, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
-      propertyPath: m_SortingOrder
-      value: 49
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5920285202605335032, guid: 06f16954c9a32fa4a8d74e058a4bfd66, type: 3}
@@ -11689,11 +11677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8240686643607778052, guid: ff171316afe7a44418672de3a9e2326b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 77.44
+      value: -0.52
       objectReference: {fileID: 0}
     - target: {fileID: 8240686643607778052, guid: ff171316afe7a44418672de3a9e2326b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4
+      value: -0.46
       objectReference: {fileID: 0}
     - target: {fileID: 8240686643607778052, guid: ff171316afe7a44418672de3a9e2326b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11941,7 +11929,7 @@ SortingGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602039450}
-  m_Enabled: 1
+  m_Enabled: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 50

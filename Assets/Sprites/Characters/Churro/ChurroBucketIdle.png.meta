@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7efec1eb05b6c0f48ae049ad63ad651b
+guid: e7502323cd0dd904390e59090d732fa6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,7 +141,175 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChurroIdle_0
+      name: ChurroBucketIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2c3e8e27f27b84286ebde411673a1a
+      internalID: -1037390046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e9b4d5082802942a6003e34f48bfe9
+      internalID: -570492237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df49683185c1b2f459a997acd7cf87c1
+      internalID: -682129339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c900fd55999f14ab855d0fd4cac36c
+      internalID: -1318559955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_4
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbc36d22026a324b9664c7d9bbb29a5
+      internalID: 2020441096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_5
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3dbde3bd2459048a984891bbc05c11
+      internalID: 263362337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_6
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d02038ac6b0c443a320a4b56b375c1
+      internalID: 2024437533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_7
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216912e6721bda1419f24b8c6755acaa
+      internalID: -231085714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurroBucketIdle_8
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9632b3c2fcdda594cbb058a2bfe29f1d
-      internalID: -204659987
+      spriteID: 67856d3002aacbb449b903a210f4a441
+      internalID: 1265516459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_1
+      name: ChurroBucketIdle_9
       rect:
         serializedVersion: 2
         x: 1024
@@ -176,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90e753c66b9176442a0dfa1cbd491bfb
-      internalID: 1954194650
+      spriteID: 9deed4622b20a0844bad23ee6d312d04
+      internalID: -70569563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_2
+      name: ChurroBucketIdle_10
       rect:
         serializedVersion: 2
         x: 2048
@@ -197,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1193126d6bc61a742941ff505713908e
-      internalID: -1918852564
+      spriteID: 5c309f3fe9adbcc4d950cb59e814fe55
+      internalID: -608690504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_3
+      name: ChurroBucketIdle_11
       rect:
         serializedVersion: 2
         x: 3072
@@ -218,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1562ec4924864fc42994ba70f8cc77c3
-      internalID: -1671801534
+      spriteID: 4a66cf9aed03d0b4b87a047e6275ca3c
+      internalID: -65428909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_4
+      name: ChurroBucketIdle_12
       rect:
         serializedVersion: 2
         x: 4096
@@ -239,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18cd03c4a4b7fc14cb5ca5ae60c65d11
-      internalID: 246942461
+      spriteID: 73474ffad79164e4ba52b5de43dbdab1
+      internalID: -1280687195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_5
+      name: ChurroBucketIdle_13
       rect:
         serializedVersion: 2
         x: 5120
@@ -260,14 +428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e503f33985957648ad00a515f88f7ba
-      internalID: 447872194
+      spriteID: eb37e99c0ec447847baf9969f0e7dc04
+      internalID: 560804202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_6
+      name: ChurroBucketIdle_14
       rect:
         serializedVersion: 2
         x: 6144
@@ -281,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81987d580a189c2498b0a9c0079bd5d8
-      internalID: 1038623117
+      spriteID: 4cd9495566666ba43ac26c4ea4dd9f11
+      internalID: -1768110337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_7
+      name: ChurroBucketIdle_15
       rect:
         serializedVersion: 2
         x: 7168
@@ -302,14 +470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ce90dd0ceeec5b438f8970c00fc71a2
-      internalID: -914321508
+      spriteID: e5a4613b6b7b4914a9e86b29a850509c
+      internalID: 911688104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_8
+      name: ChurroBucketIdle_16
       rect:
         serializedVersion: 2
         x: 0
@@ -323,14 +491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7efaa0e1437d1f41b36c113afd3cf54
-      internalID: 1255474242
+      spriteID: d8e4f3c25ac64dc4db655fb8384b7321
+      internalID: -2011435090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_9
+      name: ChurroBucketIdle_17
       rect:
         serializedVersion: 2
         x: 1024
@@ -344,14 +512,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c35f53c8e3c5204abbcf1d853e997ce
-      internalID: 998352453
+      spriteID: 8844ccf421d85eb4fa1239002c7dcbd9
+      internalID: -448900037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_10
+      name: ChurroBucketIdle_18
       rect:
         serializedVersion: 2
         x: 2048
@@ -365,14 +533,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f974fc23b77b2f4e837f233d2519434
-      internalID: 723203586
+      spriteID: 84aa97026f8e9fd418dc6f5247dff490
+      internalID: -983510929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_11
+      name: ChurroBucketIdle_19
       rect:
         serializedVersion: 2
         x: 3072
@@ -386,14 +554,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deaa7a16a572c0b478c83697e6d3e529
-      internalID: 642103454
+      spriteID: 48645dae0093fbb449af35fde38688f4
+      internalID: -519549746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_12
+      name: ChurroBucketIdle_20
       rect:
         serializedVersion: 2
         x: 4096
@@ -407,14 +575,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50dfae1f962e2b40a30dc3e268f7411
-      internalID: -1950017623
+      spriteID: b12e44df6661d5c4b83219c983dd6bcf
+      internalID: -312378450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_13
+      name: ChurroBucketIdle_21
       rect:
         serializedVersion: 2
         x: 5120
@@ -428,14 +596,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e8c10caa3ca2694cbbc06aad35070cc
-      internalID: 1413368293
+      spriteID: 08a8399039b022e4cb7be8ee77fbba6f
+      internalID: -1257705800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_14
+      name: ChurroBucketIdle_22
       rect:
         serializedVersion: 2
         x: 6144
@@ -449,14 +617,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce4e32772723b944bd17f154c22c1d0
-      internalID: 1158874631
+      spriteID: d54250d1e6d4eaf4fa994458ebcb3c83
+      internalID: 1462681546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_15
+      name: ChurroBucketIdle_23
       rect:
         serializedVersion: 2
         x: 7168
@@ -470,14 +638,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73f6ad2d7cf628340824d0ffb98728e2
-      internalID: -1404139657
+      spriteID: 0483b90a1b119614195416896ea459f0
+      internalID: -675502886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_16
+      name: ChurroBucketIdle_24
       rect:
         serializedVersion: 2
         x: 0
@@ -491,14 +659,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2c6654097b9567458f84b0c9454089a
-      internalID: 213793592
+      spriteID: 99f1af875bfdd5c4a83ee870a8a7a88a
+      internalID: -901247240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_17
+      name: ChurroBucketIdle_25
       rect:
         serializedVersion: 2
         x: 1024
@@ -512,14 +680,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d753983afe0f05c489fd6899ebb70a68
-      internalID: -415482032
+      spriteID: b064f531946e63a40920ba98abaadbee
+      internalID: 877793084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_18
+      name: ChurroBucketIdle_26
       rect:
         serializedVersion: 2
         x: 2048
@@ -533,14 +701,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9af5e062ce19f73479d9ea825904fa53
-      internalID: -188014689
+      spriteID: e96b7f852e26a174280ef4ddf30fef03
+      internalID: -1437509599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_19
+      name: ChurroBucketIdle_27
       rect:
         serializedVersion: 2
         x: 3072
@@ -554,14 +722,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77882c69ce857af4584b09d2fd03b804
-      internalID: -330713095
+      spriteID: 6b342f91759dd8243b037a1a59e678f2
+      internalID: 1530212027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_20
+      name: ChurroBucketIdle_28
       rect:
         serializedVersion: 2
         x: 4096
@@ -575,14 +743,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f1b6387ba53173418646ac5b903f520
-      internalID: -301303065
+      spriteID: 35291e087e730e149820b0b995362e68
+      internalID: 330390300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_21
+      name: ChurroBucketIdle_29
       rect:
         serializedVersion: 2
         x: 5120
@@ -596,14 +764,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e078b298c44ab644c9843fb20d3a62c2
-      internalID: 1895770502
+      spriteID: 0b4de574170c27440b97bd75b1f48d4b
+      internalID: 800626946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_22
+      name: ChurroBucketIdle_30
       rect:
         serializedVersion: 2
         x: 6144
@@ -617,14 +785,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492fbe3444cafe946a2aa56f48e76cab
-      internalID: 1724618410
+      spriteID: 52db465831b3272428dd2d60a1d4c1c3
+      internalID: -2093700430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_23
+      name: ChurroBucketIdle_31
       rect:
         serializedVersion: 2
         x: 7168
@@ -638,14 +806,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2d0b2605fa9e04aa955a9c0696e69a
-      internalID: -462391623
+      spriteID: 02c77970d2be9954f8210edf4ac27cfb
+      internalID: 1654435914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_24
+      name: ChurroBucketIdle_32
       rect:
         serializedVersion: 2
         x: 0
@@ -659,14 +827,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f68a189310c9ca648991f3fbe3cb3c75
-      internalID: 802335108
+      spriteID: 554049b84731643458c37dfd710d2991
+      internalID: -581276157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_25
+      name: ChurroBucketIdle_33
       rect:
         serializedVersion: 2
         x: 1024
@@ -680,14 +848,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 198484c129b9f1447aa157124686b3ca
-      internalID: 1328467632
+      spriteID: 9fe5618e807eec448afe04599049adbb
+      internalID: -535681692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_26
+      name: ChurroBucketIdle_34
       rect:
         serializedVersion: 2
         x: 2048
@@ -701,14 +869,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59fd031e965eab4419158349ff94d6f7
-      internalID: 699845002
+      spriteID: 179113fbd20c1ac429b4415323ae4313
+      internalID: -1667228824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_27
+      name: ChurroBucketIdle_35
       rect:
         serializedVersion: 2
         x: 3072
@@ -722,14 +890,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1e773dd0ff9e5e4f82e06a355ae11af
-      internalID: 866693929
+      spriteID: 55bba28a1310d674ba7b0fbb2d7bc8a5
+      internalID: 1371331613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_28
+      name: ChurroBucketIdle_36
       rect:
         serializedVersion: 2
         x: 4096
@@ -743,14 +911,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 230d16ec34933aa47b5312937ff85462
-      internalID: 538535661
+      spriteID: ebf159dc9e2f5364cb8242f3b1eef530
+      internalID: -1538318168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_29
+      name: ChurroBucketIdle_37
       rect:
         serializedVersion: 2
         x: 5120
@@ -764,14 +932,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72692b2fad56d3c4e97ff49d83ab9687
-      internalID: -206351313
+      spriteID: 1c43578109225384da9666e828176778
+      internalID: 1449471110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_30
+      name: ChurroBucketIdle_38
       rect:
         serializedVersion: 2
         x: 6144
@@ -785,14 +953,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab0298754ab5c5a449dcf79c30357820
-      internalID: 597982913
+      spriteID: 262850c3f1e37d143a898377ce8ef983
+      internalID: -1213003914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_31
+      name: ChurroBucketIdle_39
       rect:
         serializedVersion: 2
         x: 7168
@@ -806,14 +974,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08e79e1bce0f3ec40a574b8510109caa
-      internalID: -1202666963
+      spriteID: 56be88e1e4c25ef4983ca97cce05d517
+      internalID: -867186738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_32
+      name: ChurroBucketIdle_40
       rect:
         serializedVersion: 2
         x: 0
@@ -827,14 +995,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da0d924eeb2ab4a49b7d6b73b822ae6c
-      internalID: -332530559
+      spriteID: aab25cfdcdd8d524184d4cacf439ee83
+      internalID: 577083252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_33
+      name: ChurroBucketIdle_41
       rect:
         serializedVersion: 2
         x: 1024
@@ -848,14 +1016,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc0b011d6942ca4db2f5e38fe2db28a
-      internalID: -458758843
+      spriteID: d2430db4208fe2d4ba00e170c1bb7aa8
+      internalID: -804619000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_34
+      name: ChurroBucketIdle_42
       rect:
         serializedVersion: 2
         x: 2048
@@ -869,14 +1037,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ced98fc0277ca840b4166597ed1cf3a
-      internalID: 777049157
+      spriteID: d7aa3f223d5d0a946bbc4eb3eb0e53e3
+      internalID: -284099046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_35
+      name: ChurroBucketIdle_43
       rect:
         serializedVersion: 2
         x: 3072
@@ -890,14 +1058,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82f397da5eab5dc4699e555b8d2dc1d0
-      internalID: -1492733378
+      spriteID: b519b9b5403ca6d4f816dbf6e74ad840
+      internalID: -282498194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_36
+      name: ChurroBucketIdle_44
       rect:
         serializedVersion: 2
         x: 4096
@@ -911,14 +1079,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81bd9a90e41f38d4b9ecc483b8462714
-      internalID: -545344241
+      spriteID: 83a8c8b21c957304781c5d5a5ebfb4d6
+      internalID: 1054329791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_37
+      name: ChurroBucketIdle_45
       rect:
         serializedVersion: 2
         x: 5120
@@ -932,14 +1100,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 353839b650cb0814da4b58673e8a812c
-      internalID: -829331882
+      spriteID: f5a1e97241ab83a488f2d3aecd3673a1
+      internalID: -625305045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_38
+      name: ChurroBucketIdle_46
       rect:
         serializedVersion: 2
         x: 6144
@@ -953,14 +1121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb9665621bef0f648aea4f40d8ae57e2
-      internalID: 750721481
+      spriteID: 52075ed6ebfa7a341920d0956ca6827d
+      internalID: -1714492004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChurroIdle_39
+      name: ChurroBucketIdle_47
       rect:
         serializedVersion: 2
         x: 7168
@@ -974,8 +1142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ba15e7c20efbb242b04d49ec5b8db4a
-      internalID: 1333977716
+      spriteID: 7e9bc69f23746654cafccfb97b3a788b
+      internalID: 1072765874
       vertices: []
       indices: 
       edges: []
@@ -991,46 +1159,54 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ChurroIdle_39: 1333977716
-      ChurroIdle_11: 642103454
-      ChurroIdle_24: 802335108
-      ChurroIdle_15: -1404139657
-      ChurroIdle_27: 866693929
-      ChurroIdle_8: 1255474242
-      ChurroIdle_4: 246942461
-      ChurroIdle_7: -914321508
-      ChurroIdle_17: -415482032
-      ChurroIdle_23: -462391623
-      ChurroIdle_2: -1918852564
-      ChurroIdle_35: -1492733378
-      ChurroIdle_25: 1328467632
-      ChurroIdle_21: 1895770502
-      ChurroIdle_1: 1954194650
-      ChurroIdle_37: -829331882
-      ChurroIdle_9: 998352453
-      ChurroIdle_34: 777049157
-      ChurroIdle_22: 1724618410
-      ChurroIdle_33: -458758843
-      ChurroIdle_16: 213793592
-      ChurroIdle_38: 750721481
-      ChurroIdle_28: 538535661
-      ChurroIdle_29: -206351313
-      ChurroIdle_18: -188014689
-      ChurroIdle_12: -1950017623
-      ChurroIdle_3: -1671801534
-      ChurroIdle_10: 723203586
-      ChurroIdle_26: 699845002
-      ChurroIdle_0: -204659987
-      ChurroIdle_13: 1413368293
-      ChurroIdle_19: -330713095
-      ChurroIdle_5: 447872194
-      ChurroIdle_30: 597982913
-      ChurroIdle_20: -301303065
-      ChurroIdle_36: -545344241
-      ChurroIdle_32: -332530559
-      ChurroIdle_31: -1202666963
-      ChurroIdle_6: 1038623117
-      ChurroIdle_14: 1158874631
+      ChurroBucketIdle_17: -448900037
+      ChurroBucketIdle_12: -1280687195
+      ChurroBucketIdle_25: 877793084
+      ChurroBucketIdle_5: 263362337
+      ChurroBucketIdle_8: 1265516459
+      ChurroBucketIdle_38: -1213003914
+      ChurroBucketIdle_39: -867186738
+      ChurroBucketIdle_20: -312378450
+      ChurroBucketIdle_37: 1449471110
+      ChurroBucketIdle_44: 1054329791
+      ChurroBucketIdle_47: 1072765874
+      ChurroBucketIdle_27: 1530212027
+      ChurroBucketIdle_6: 2024437533
+      ChurroBucketIdle_32: -581276157
+      ChurroBucketIdle_9: -70569563
+      ChurroBucketIdle_11: -65428909
+      ChurroBucketIdle_28: 330390300
+      ChurroBucketIdle_29: 800626946
+      ChurroBucketIdle_36: -1538318168
+      ChurroBucketIdle_33: -535681692
+      ChurroBucketIdle_34: -1667228824
+      ChurroBucketIdle_0: -1037390046
+      ChurroBucketIdle_23: -675502886
+      ChurroBucketIdle_40: 577083252
+      ChurroBucketIdle_4: 2020441096
+      ChurroBucketIdle_30: -2093700430
+      ChurroBucketIdle_31: 1654435914
+      ChurroBucketIdle_3: -1318559955
+      ChurroBucketIdle_10: -608690504
+      ChurroBucketIdle_18: -983510929
+      ChurroBucketIdle_19: -519549746
+      ChurroBucketIdle_46: -1714492004
+      ChurroBucketIdle_21: -1257705800
+      ChurroBucketIdle_15: 911688104
+      ChurroBucketIdle_43: -282498194
+      ChurroBucketIdle_22: 1462681546
+      ChurroBucketIdle_1: -570492237
+      ChurroBucketIdle_45: -625305045
+      ChurroBucketIdle_42: -284099046
+      ChurroBucketIdle_13: 560804202
+      ChurroBucketIdle_14: -1768110337
+      ChurroBucketIdle_16: -2011435090
+      ChurroBucketIdle_35: 1371331613
+      ChurroBucketIdle_26: -1437509599
+      ChurroBucketIdle_7: -231085714
+      ChurroBucketIdle_41: -804619000
+      ChurroBucketIdle_24: -901247240
+      ChurroBucketIdle_2: -682129339
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
