@@ -8,6 +8,7 @@ public class BossHealth : MonoBehaviour
     private int currentHealth;
     // reference to the animator component
     private Animator animator;
+    private Animator anim; 
 
     // Reference to the panel to be displayed when the boss is defeated
     public GameObject winningPanel;
@@ -22,13 +23,14 @@ public class BossHealth : MonoBehaviour
         // Set the current health to the maximum health when the object is created
         currentHealth = maxHealth;
         animator = transform.GetChild(1).GetComponent<Animator>();
+        anim = transform.GetChild(0).GetComponent<Animator>();
     }
 
     // Function to decrease the health by a specified amount
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
+        anim.SetBool("isHitting", true);
         // Check if the health has dropped to zero or below
         if (currentHealth <= 0)
         {
@@ -41,7 +43,7 @@ public class BossHealth : MonoBehaviour
     private void Die()
     {
         animator.SetTrigger("isBreaking");
-
+        anim.SetTrigger("isBreaking");
         transform.GetChild(0).gameObject.SetActive(false);
         // Display the winning panel after a delay
         Invoke("ShowWinningPanel", winDelay);
