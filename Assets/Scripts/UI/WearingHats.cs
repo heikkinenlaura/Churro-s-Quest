@@ -15,10 +15,6 @@ public class WearingHats : MonoBehaviour
         PlayerPrefs.SetInt(minigameObjectName + "Active", 1);
         PlayerPrefs.Save();
 
-        Debug.Log("PlayerPrefs value set for " + minigameObjectName + "Active");
-
-        // Load the minigame scene
-        SceneManager.LoadScene("MiniGame");
     }
     public void OnClickFrog()
     {
@@ -26,10 +22,7 @@ public class WearingHats : MonoBehaviour
         PlayerPrefs.SetInt(minigameObjectName + "Active", 2);
         PlayerPrefs.Save();
 
-        Debug.Log("PlayerPrefs value set for " + minigameObjectName + "Active");
 
-        // Load the minigame scene
-        SceneManager.LoadScene("MiniGame");
     }
     public void OnClickCat()
     {
@@ -37,10 +30,7 @@ public class WearingHats : MonoBehaviour
         PlayerPrefs.SetInt(minigameObjectName + "Active", 3);
         PlayerPrefs.Save();
 
-        Debug.Log("PlayerPrefs value set for " + minigameObjectName + "Active");
 
-        // Load the minigame scene
-        SceneManager.LoadScene("MiniGame");
     }
     public void OnClickChurro()
     {
@@ -48,9 +38,5 @@ public class WearingHats : MonoBehaviour
         PlayerPrefs.SetInt(minigameObjectName + "Active", 4);
         PlayerPrefs.Save();
 
-        Debug.Log("PlayerPrefs value set for " + minigameObjectName + "Active");
-
-        // Load the minigame scene
-        SceneManager.LoadScene("MiniGame");
     }
 }
