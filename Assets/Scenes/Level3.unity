@@ -2288,7 +2288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b358dbebe18234f8c8cc15a025a18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 75
+  timeRemaining: 180
   timerText: {fileID: 802885202}
   losePanel: {fileID: 1385365261}
 --- !u!1 &226139492

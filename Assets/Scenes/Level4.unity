@@ -3025,7 +3025,7 @@ RectTransform:
   - {fileID: 1342920907}
   - {fileID: 416574346}
   m_Father: {fileID: 213389889}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4215,11 +4215,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 165587575}
   - {fileID: 1385365262}
   - {fileID: 575598345}
   - {fileID: 1250667716}
   - {fileID: 817740633}
-  - {fileID: 165587575}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9718,7 +9718,7 @@ RectTransform:
   - {fileID: 56115201}
   - {fileID: 143298095}
   m_Father: {fileID: 213389889}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10225,7 +10225,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 1760132359}
   winPanel: {fileID: 1250667715}
-  openedDoors: 0
   openedDoorsText: {fileID: 1342920908}
 --- !u!61 &626944466
 BoxCollider2D:
@@ -13280,7 +13279,7 @@ RectTransform:
   - {fileID: 2086035079}
   - {fileID: 336266650}
   m_Father: {fileID: 213389889}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -16466,7 +16465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 636224507}
   winPanel: {fileID: 1250667715}
-  openedDoors: 0
   openedDoorsText: {fileID: 1342920908}
 --- !u!212 &1093496885
 SpriteRenderer:
@@ -20196,7 +20194,7 @@ RectTransform:
   - {fileID: 1262073949}
   - {fileID: 1026624056}
   m_Father: {fileID: 213389889}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.073729165, y: 0.03048148}
   m_AnchorMax: {x: 0.94131255, y: 0.984}
@@ -21924,7 +21922,7 @@ RectTransform:
   - {fileID: 395581584}
   - {fileID: 1697060387}
   m_Father: {fileID: 213389889}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.073729165, y: 0.03048148}
   m_AnchorMax: {x: 0.94131255, y: 0.984}
@@ -37222,7 +37220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 4173134341499108011}
   winPanel: {fileID: 1250667715}
-  openedDoors: 0
   openedDoorsText: {fileID: 1342920908}
 --- !u!61 &4173134340353339006
 BoxCollider2D:
@@ -37326,7 +37323,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 4173134341395683076}
   winPanel: {fileID: 1250667715}
-  openedDoors: 0
   openedDoorsText: {fileID: 1342920908}
 --- !u!212 &4173134340532241363
 SpriteRenderer:
@@ -37420,7 +37416,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 4173134342372087190}
   winPanel: {fileID: 1250667715}
-  openedDoors: 0
   openedDoorsText: {fileID: 1342920908}
 --- !u!212 &4173134341089870145
 SpriteRenderer:
@@ -37690,7 +37685,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 4173134342292700781}
   winPanel: {fileID: 1250667715}
-  openedDoors: 0
   openedDoorsText: {fileID: 1342920908}
 --- !u!61 &4173134341177731772
 BoxCollider2D:
@@ -38036,7 +38030,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childObject: {fileID: 4173134341288606335}
   winPanel: {fileID: 1250667715}
-  openedDoors: 0
   openedDoorsText: {fileID: 1342920908}
 --- !u!1 &4173134342182842035
 GameObject:

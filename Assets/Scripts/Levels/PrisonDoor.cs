@@ -10,6 +10,11 @@ public class PrisonDoor : MonoBehaviour
     private static int openedDoors;
     public TMP_Text openedDoorsText;
 
+    private void Start()
+    {
+        openedDoors = 0;
+    }
+
     public void Update()
     {
         openedDoorsText.text = "Opened Doors: " + openedDoors.ToString() + " / 7";

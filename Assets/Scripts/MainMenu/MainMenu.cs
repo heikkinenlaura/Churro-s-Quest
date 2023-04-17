@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         currentState = MainMenuState.Initialize;
         //PlayerPrefs.DeleteAll();
     }

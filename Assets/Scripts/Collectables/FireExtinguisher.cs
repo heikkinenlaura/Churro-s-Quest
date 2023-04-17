@@ -65,6 +65,7 @@ public class FireExtinguisher : MonoBehaviour
         if (extinguishedFiresCount >= requiredFiresCount)
         {
             ShowWinningPanel();
+            extinguishedFiresCount = 0;
         }
 
         // Destroy the fire object

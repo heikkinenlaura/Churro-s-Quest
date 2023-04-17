@@ -56,5 +56,6 @@ public class TrashCollectable : MonoBehaviour
         trashPanel.SetActive(false);
         winningPanel.SetActive(true);
         levelComplete.NextLevel();
+        collectedTrashCount = 0;
     }
 }
